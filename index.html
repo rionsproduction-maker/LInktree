@@ -6,34 +6,39 @@
 <title>Rions Production</title>
 <style>
 /* ============ VARIABEL TEMA ============ */
-:root{
-  --accent:#a855f7;
-  --accent-2:#6366f1;
-  --accent-3:#ec4899;
+:root {
+  /* Accent Colors (Gradient/Highlight lebih kontras & pop) */
+  --accent: #7bbde8;   /* Sky Blue - Utama */
+  --accent-2: #0a4174; /* Deep Ocean Blue - Aksen Kuat */
+  --accent-3: #4e8ea2; /* Oceanic Teal - Akses Sekunder */
 }
-html[data-theme="dark"]{
-  --bg:#0a0a12;
-  --card:rgba(255,255,255,.045);
-  --card-solid:#14141f;
-  --border:rgba(255,255,255,.10);
-  --text:#f5f5f7;
-  --muted:rgba(245,245,247,.55);
-  --link-bg:rgba(255,255,255,.05);
-  --link-bg-hover:rgba(255,255,255,.10);
-  --shadow:0 24px 60px rgba(0,0,0,.55);
-  --orb:.55;
+
+html[data-theme="dark"] {
+  /* Dark Theme dengan Latar Gelap Pekat (#001D39) agar elemen berwarna lebih menyala */
+  --bg: #001d39;
+  --card: rgba(10, 65, 116, 0.45);
+  --card-solid: #092c4f;        /* Biru gelap solid dengan kontras tinggi */
+  --border: rgba(123, 189, 232, 0.25);
+  --text: #ffffff;              /* Putih bersih agar tulisan sangat tajam */
+  --muted: #a3cce8;             /* Muted bernuansa cyan-blue terang */
+  --link-bg: rgba(78, 142, 162, 0.22);
+  --link-bg-hover: rgba(123, 189, 232, 0.35);
+  --shadow: 0 24px 60px rgba(0, 10, 25, 0.80);
+  --orb: .65;
 }
-html[data-theme="light"]{
-  --bg:#eef0f8;
-  --card:rgba(255,255,255,.72);
-  --card-solid:#ffffff;
-  --border:rgba(20,20,43,.08);
-  --text:#14142b;
-  --muted:rgba(20,20,43,.55);
-  --link-bg:rgba(255,255,255,.85);
-  --link-bg-hover:#ffffff;
-  --shadow:0 24px 60px rgba(60,60,130,.14);
-  --orb:.35;
+
+html[data-theme="light"] {
+  /* Light Theme dengan Kontras Teks & Warna Elemen yang Lebih Bold */
+  --bg: #dbeaf4;                /* Base latar biru terang yang kaya (tidak terlalu putih/pucat) */
+  --card: rgba(255, 255, 255, 0.88);
+  --card-solid: #ffffff;
+  --border: rgba(10, 65, 116, 0.20);
+  --text: #001d39;              /* Dark Navy pekat untuk legibilitas maksimal */
+  --muted: #3a6285;             /* Biru medium tegas untuk teks sekunder */
+  --link-bg: #a6d2f0;           /* Biru segar untuk button/link */
+  --link-bg-hover: #7bbde8;     /* Hover warna cerah */
+  --shadow: 0 24px 60px rgba(0, 29, 57, 0.18);
+  --orb: .45;
 }
 
 /* ============ DASAR ============ */
@@ -298,7 +303,7 @@ body{
 const CONFIG = {
   name: "Fardan Annas Kabilah",
   username: "@_fardan28",
-  bio: "Student & Web developer junior 🚀<br>Hayoooo Kepoooo ya 😝<br>☕🗿",
+  bio: "Student & Web developer junior 🚀<br>☕🗿",
   avatar: "https://raw.githubusercontent.com/rionsproduction-maker/Image-link/f5ff49bfe141aca2f4db2ca172d11793c304ebb4/Pemuda%20Berjalan%20dalam%20Cahaya%20Nebula.png",   // kosongkan "" untuk pakai inisial
   verified: false,
   footer: "© 2026 Rions Production · Dibuat Oleh Fardan A.K",
